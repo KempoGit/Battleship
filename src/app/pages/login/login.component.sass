@@ -1,0 +1,52 @@
+#myVideo
+  position: fixed
+  right: 0
+  bottom: -10%
+  min-width: 100%
+  min-height: 120%
+  pointer-events: none
+  
+@mixin container
+  position: absolute
+  left: 0
+  width: 100%
+  display: flex
+
+.title-container
+  @include container
+  top: 0
+  height: 60%
+
+.title-text
+  margin: auto
+  color: white
+  font-size: 5rem
+  letter-spacing: 1px
+
+
+.option-container
+  @include container
+  height: 40%
+  bottom: 0
+
+.button-container
+  position: relative
+  width: 200px
+  height: 200px
+  margin-left: auto
+  margin-right: auto
+  display: flex
+
+button
+  margin-top: 10px
+  height: 40px
+  width: 150px
+
+.start-button 
+  position: relative
+  margin-left: auto
+  margin-right: auto
+  border-radius: 50px
+  font-size: 1.2rem
+  letter-spacing: 2px
+  color: black
